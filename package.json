@@ -1,0 +1,60 @@
+{
+  "name": "glm-orchestrator-dashboard",
+  "version": "0.1.0",
+  "description": "Web dashboard for visualizing GLM Orchestrator activity",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 4740",
+    "build": "next build",
+    "start": "next start -p 4740",
+    "lint": "next lint",
+    "prepare": "husky"
+  },
+  "bin": {
+    "glm-dashboard": "./dist/cli.js"
+  },
+  "files": [
+    ".next",
+    "dist",
+    "public"
+  ],
+  "keywords": [
+    "glm",
+    "orchestrator",
+    "dashboard",
+    "mcp",
+    "claude",
+    "ai"
+  ],
+  "author": "Arnold Cartagena",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acartag7/glm-orchestrator-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acartag7/glm-orchestrator-dashboard/issues"
+  },
+  "homepage": "https://github.com/acartag7/glm-orchestrator-dashboard#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.0",
+    "husky": "^9.1.7",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}
